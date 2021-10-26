@@ -31,6 +31,10 @@ img {
   height: 20px;
   color: black;
 }
+.nav-container ul .blue svg {
+  color: rgb(10, 102, 194);
+}
+
 /* ************************ */
 /* RESETS DONE */
 /* ************************ */
@@ -91,7 +95,7 @@ header nav ul a {
 .scroll {
   width: 50px;
   height: 100px;
-  transform: rotateZ(90deg);
+
   margin-top: 2em;
 }
 
@@ -116,6 +120,10 @@ section {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.featured .right {
+  border-radius: 1em;
 }
 
 .subtitle {

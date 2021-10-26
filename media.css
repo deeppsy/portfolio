@@ -1,0 +1,137 @@
+@media only screen and (min-width: 800px) {
+  .featured,
+  .portfolio {
+    text-align: left;
+  }
+  .featured,
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .left,
+  .portfolio-left {
+    display: grid;
+    place-content: center;
+  }
+
+  .meet {
+    width: 450px;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1em;
+  }
+
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #6700ee;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background-color: #6e00ff;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+    border-radius: 0 0 1em 1em;
+  }
+  .hero .content .large-text {
+    font-size: 2.7em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0em;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0em;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+}
