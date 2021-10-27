@@ -16,8 +16,10 @@
 
   .meet {
     width: 450px;
+    display: flex;
+    justify-content: center;
   }
-  .right {
+  */ .right {
     margin-left: 2em;
     margin-top: 1em;
   }
@@ -39,6 +41,13 @@
   }
   .portfolio-container img {
     margin-left: 2em;
+  }
+  .contact-me {
+    display: grid;
+    grid-template-columns: 33% auto;
+  }
+  .contact-me .right .inner {
+    float: right;
   }
 }
 
@@ -92,6 +101,7 @@
   }
   .meet {
     margin: unset;
+    justify-content: flex-start;
   }
 
   .hero-design {

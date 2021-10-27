@@ -18,9 +18,9 @@
         <a href="index.html" class="logo">Adanikin Dipo</a>
         <nav>
           <ul>
-            <li><a href="">Projects</a></li>
-            <li><a href="">My Skills</a></li>
-            <li><a href="">Hire Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#contact-me">Hire Me</a></li>
           </ul>
         </nav>
       </header>
@@ -88,7 +88,7 @@
       <div class="content">
         <div class="stagger1">
           <p class="large-text">Hi there!</p>
-          <p class="large-text">I'm Dipo,</p>
+          <p class="large-text name">I'm Dipo,</p>
           <p class="large-text">Software Engineer.</p>
         </div>
         <div class="meet stagger1">
@@ -215,7 +215,7 @@
       />
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="skills-container">
         <ul>
           <li class="transition2">
@@ -223,6 +223,39 @@
               <img src="/assets/code_black_24dp.svg" alt="Code Icon" />
             </div>
             <p class="skill-title">HTML</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              alias ex, delectus nesciunt laboriosam dignissimos!
+            </p>
+          </li>
+
+          <li class="transition2">
+            <div class="icon-container two">
+              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
+            </div>
+            <p class="skill-title">Node</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              alias ex, delectus nesciunt laboriosam dignissimos!
+            </p>
+          </li>
+
+          <li class="transition2">
+            <div class="icon-container two">
+              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
+            </div>
+            <p class="skill-title">Node</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              alias ex, delectus nesciunt laboriosam dignissimos!
+            </p>
+          </li>
+
+          <li class="transition2">
+            <div class="icon-container two">
+              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
+            </div>
+            <p class="skill-title">Node</p>
             <p class="featured-desc skill-desc">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
               alias ex, delectus nesciunt laboriosam dignissimos!
@@ -256,7 +289,7 @@
         </ul>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="projects">
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
@@ -297,6 +330,68 @@
           </div>
         </div>
         <a href="#"><img src="/images/yelpcamp.png" alt="YelpCamp" /></a>
+      </div>
+    </section>
+
+    <section class="contact-me" id="contact-me">
+      <div class="left">
+        <img
+          class="right transition2"
+          src="/assets/undraw_Business_deal_re_up4u.svg"
+          alt="fancy image to work together"
+        />
+      </div>
+
+      <div class="right">
+        <div class="inner transition2">
+          <p class="subtitle">Wanna Say Hi?</p>
+          <a href="#" class="featured-title">Contact Me</a>
+          <form
+            action="https://formsubmit.co/5a5b4a2cabe24da27a061357eddfc254"
+            method="post"
+          >
+            <div class="row">
+              <div class="col">
+                <div class="input-box">
+                  <input type="text" name="name" required />
+                  <span class="text">Name</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="input-box">
+                  <input type="email" name="email" required />
+                  <span class="text">Email Address</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="input-box textarea">
+                  <textarea name="message" required></textarea>
+                  <span class="text">Type your Message</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="row">
+              <div class="col">
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* ************************ */
@@ -78,6 +79,17 @@ header nav ul a {
   display: grid;
   text-align: center;
   padding: 4em;
+}
+
+.hero .large-text {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.hero .name {
+  font-size: 2.5em;
+  text-shadow: 0.035em 0.035em 0 yellow, 0.035em 0.035em 0 blue,
+    0.035em 0.035em 0 red, 0.035em 0.035em 0 black;
 }
 .meet {
   display: flex;
@@ -192,4 +204,138 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+.contact-me {
+  background-color: #03080a;
+  text-align: unset;
+}
+
+.contact-me .featured-title {
+  color: #d73333;
+}
+
+.contact-me .inner {
+  width: 100%;
+  padding: 2em;
+}
+
+.contact-me .inner .subtitle,
+.contact-me .inner .featured-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact-me .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.contact-me .row .col {
+  width: 100%;
+  position: relative;
+  padding: 0 1em;
+  margin: 2em 0 1em;
+  transition: 0.5s;
+}
+
+.contact-me .row .input-box {
+  position: relative;
+  width: 100%;
+  height: 2.2em;
+  color: #45f3ff;
+}
+
+.contact-me .row .input-box input,
+.contact-me .row .input-box.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  padding: 0 0.8em;
+  z-index: 1;
+  color: #e5d5fa;
+}
+
+.contact-me .row .input-box .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 2em;
+  font-size: 1.2em;
+  padding: 0 0.8em;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.contact-me .row .input-box input:focus + .text,
+.contact-me .row .input-box input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact-me .row .input-box .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #45f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.contact-me .row .input-box input:focus ~ .line,
+.contact-me .row .input-box input:valid ~ .line {
+  height: 100%;
+}
+
+.contact-me .row .input-box.textarea {
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  padding: 0.8em 0;
+}
+
+.contact-me .row .input-box.textarea textarea {
+  height: 100%;
+  resize: none;
+  color: #04090a;
+  font-weight: bold;
+}
+
+.contact-me .row .input-box textarea:focus + .text,
+.contact-me .row .input-box textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact-me .row .input-box textarea:focus ~ .line,
+.contact-me .row .input-box textarea:valid ~ .line {
+  height: 100%;
+}
+
+button[type="submit"] {
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background: linear-gradient(165deg, #0052ff 0%, #ff00d0 100%) border-box;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.5em;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(155deg, #0a4cdb 0%, #c50aa3 100%) border-box;
 }
