@@ -106,8 +106,8 @@ li.hide {
 
 .hero .name {
   font-size: 2.5em;
-  text-shadow: 0.035em 0.035em 0 #130341, 0.035em 0.035em 0 blue,
-    0.035em 0.035em 0 red, 0.035em 0.035em 0 black;
+  text-shadow: 0.035em 0.035em 0 #0d0426, 0.035em 0.035em 0 #134c3a,
+    0.035em 0.035em 0 #62176a, 0.035em 0.035em 0 #971717;
 }
 .meet {
   display: flex;
@@ -374,4 +374,33 @@ button[type="submit"] {
 button[type="submit"]:hover,
 button[type="submit"]:focus {
   transform: translateY(-3px);
+}
+
+.social h5 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.social h5:before,
+.social h5:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #fff;
+  margin: auto;
+}
+
+.social p {
+  color: #f7f7f7;
+  text-align: center;
+}
+
+.social svg {
+  width: 30px;
+  height: 30px;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-evenly;
 }

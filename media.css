@@ -94,6 +94,10 @@
     display: grid;
     place-items: center;
   }
+
+  .social {
+    display: none;
+  }
   .social-header ul {
     display: flex;
     justify-content: space-between;
