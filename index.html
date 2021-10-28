@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adanikin Dipo</title>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
     <link rel="stylesheet" href="animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <script src="script.js" defer></script>
   </head>
@@ -15,13 +22,49 @@
   <body>
     <div class="nav-container">
       <header>
-        <a href="index.html" class="logo">Adanikin Dipo</a>
-        <nav>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#contact-me">Hire Me</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#contact-me">Hire Me</a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link logo" href="index.html"
+                  >Adanikin Dipo <span class="sr-only">(current)</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">My Skills</a>
+                  </li>
+
+                  <li class="nav-item hide">
+                    <a class="nav-link" href="#contact-me">Hire Me</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <div class="social-header">
@@ -93,7 +136,7 @@
         </div>
         <div class="meet stagger1">
           <span>👇</span>
-          <p>Meet Adanikin Oladipupo</p>
+          <p>Meet Adanikin Dipo</p>
         </div>
         <svg
           width="102"
@@ -197,11 +240,11 @@
       </svg>
     </div>
 
-    <section class="featured">
+    <section class="featured" id="about-me">
       <div class="left">
         <div class="inner transition2">
-          <p class="subtitle">Featured Project</p>
-          <a href="#" class="featured-title">YelpCamp - Yelp MiniClone</a>
+          <p class="subtitle">Adanikin Dipo</p>
+          <p class="featured-title">ABOUT ME</p>
           <p class="featured-desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
             ratione esse impedit molestias qui voluptates.
@@ -219,8 +262,11 @@
       <div class="skills-container">
         <ul>
           <li class="transition2">
-            <div class="icon-container one">
-              <img src="/assets/code_black_24dp.svg" alt="Code Icon" />
+            <div class="icon-container">
+              <img
+                src="/images/html5-without-wordmark-color.svg"
+                alt="HTML Image"
+              />
             </div>
             <p class="skill-title">HTML</p>
             <p class="featured-desc skill-desc">
@@ -230,8 +276,8 @@
           </li>
 
           <li class="transition2">
-            <div class="icon-container two">
-              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
+            <div class="icon-container">
+              <img src="/images/node.svg" alt="Code Icon" />
             </div>
             <p class="skill-title">Node</p>
             <p class="featured-desc skill-desc">
@@ -241,10 +287,10 @@
           </li>
 
           <li class="transition2">
-            <div class="icon-container two">
-              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
+            <div class="icon-container">
+              <img src="/images/icons8-css3.svg" alt="Code Icon" />
             </div>
-            <p class="skill-title">Node</p>
+            <p class="skill-title">CSS</p>
             <p class="featured-desc skill-desc">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
               alias ex, delectus nesciunt laboriosam dignissimos!
@@ -252,35 +298,32 @@
           </li>
 
           <li class="transition2">
-            <div class="icon-container two">
-              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
-            </div>
-            <p class="skill-title">Node</p>
-            <p class="featured-desc skill-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-              alias ex, delectus nesciunt laboriosam dignissimos!
-            </p>
-          </li>
-
-          <li class="transition2">
-            <div class="icon-container two">
-              <img src="/assets/campaign_black_24dp.svg" alt="Code Icon" />
-            </div>
-            <p class="skill-title">Node</p>
-            <p class="featured-desc skill-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-              alias ex, delectus nesciunt laboriosam dignissimos!
-            </p>
-          </li>
-
-          <li class="transition2">
-            <div class="icon-container three">
-              <img
-                src="/assets/maps_home_work_black_24dp.svg"
-                alt="Code Icon"
-              />
+            <div class="icon-container">
+              <img src="/images/icons8-react.svg" alt="Code Icon" />
             </div>
             <p class="skill-title">React</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              alias ex, delectus nesciunt laboriosam dignissimos!
+            </p>
+          </li>
+
+          <li class="transition2">
+            <div class="icon-container">
+              <img src="/images/icons8-redux.svg" alt="Code Icon" />
+            </div>
+            <p class="skill-title">Redux</p>
+            <p class="featured-desc skill-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              alias ex, delectus nesciunt laboriosam dignissimos!
+            </p>
+          </li>
+
+          <li class="transition2">
+            <div class="icon-container">
+              <img src="/images/icons8-mongodb.svg" alt="Code Icon" />
+            </div>
+            <p class="skill-title">MongoDB</p>
             <p class="featured-desc skill-desc">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
               alias ex, delectus nesciunt laboriosam dignissimos!
@@ -394,6 +437,22 @@
         </div>
       </div>
     </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
