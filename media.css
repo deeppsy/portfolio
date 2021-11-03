@@ -75,10 +75,11 @@
   .nav-container {
     display: grid;
     grid-template-columns: 66% auto;
-    background: unset;
+    background: #6e00ff;
   }
   .nav-container header {
-    background: #6700ee;
+    /* background: #6700ee; */
+    background-color: #6e00ff;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -109,7 +110,7 @@
   .hero {
     display: grid;
     grid-template-columns: 66% auto;
-    background: unset;
+    background: #6e00ff;
     padding: 0;
   }
   .hero .content {
