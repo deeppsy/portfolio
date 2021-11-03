@@ -30,6 +30,12 @@ img {
 }
 .nav-container ul .white svg {
   color: rgb(236, 236, 236);
+  transition: all 0.2s ease-in;
+}
+
+.nav-container ul .white:hover svg {
+  color: rgb(172, 172, 172);
+  transform: translateY(-3px);
 }
 
 /* ************************ */
@@ -281,6 +287,7 @@ section {
   padding: 0 0.5em;
   border-top-left-radius: 1.5em;
   border-bottom-left-radius: 1.5em;
+  min-width: 35px;
   width: 10%;
 }
 
