@@ -103,6 +103,7 @@ li.hide {
   display: grid;
   text-align: center;
   padding: 4em;
+  margin-top: 3em;
 }
 
 .hero .large-text {
@@ -160,6 +161,11 @@ section {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+#about-me .featured-desc {
+  font-size: medium;
+  color: rgb(97, 94, 94);
 }
 
 .featured .right {
@@ -319,7 +325,7 @@ section {
 }
 
 .input-box input::placeholder {
-  color: #b8b3b3;
+  color: #fafafa;
 }
 
 .contact-me .input-box.textfield {
@@ -339,7 +345,7 @@ section {
 }
 
 .input-box textarea::placeholder {
-  color: #b8b3b3;
+  color: #fafafa;
 }
 
 .contact-me .row-block {
